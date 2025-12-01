@@ -1,0 +1,308 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration </title>
+     <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .registration-box {
+            background: #fff;
+            width: 400px;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+
+        .registration-box h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .registration-box input, 
+        .registration-box select {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .registration-box button {
+            width: 100%;
+            background: #28a745;
+            color: #fff;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .registration-box button:hover {
+            background: #218838;
+        }
+
+        .registration-box p {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .registration-box a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .registration-box a:hover {
+            text-decoration: underline;
+        }
+        fieldset {
+              width: fit-content;
+              margin:0 auto;
+            }
+    </style>
+    </head>
+    <body>
+        <header>
+            <center>
+                <table border="1px">
+                  <tr>
+                      <th><a href="index.html"><img src="image/logo/"alt="logo"></a></th>
+                      <th><a href="index.html">Home</a></th>
+                      <th><a href="about.html">About</a></th>
+                      <th><a href="Gallery.html">Gallery</a></th>
+                      <th><a href="Media.html">Media</a></th>
+                      <th><a href="login.html">Login</a></th>
+                      <th><a href="Register.html">Register</a></th>
+                  </tr>
+                </table>
+            </center>
+        </header>
+    <main>
+        <b><h2 style="text-align: center;">pleace Register to  Login</h2></b>
+        <hr>
+        <center>
+         <fieldset style="width: fit-content;">
+              <form>
+                  <b><legend style="text-align: center;">Register</legend></b>
+                  <br>
+                  <label for="name">Full Name:</label>
+                  <input type="text"placeholder="Enter Your Full Name" style="width: fit-content;">
+                  <br><br>
+                  <label for="email">Email:</label>
+                  <input type="email"placeholder="Enter Your Email" style="width: fit-content;">
+                  <br><br>
+                  <label for="Password">Password:</label>
+                  <input type="password"placeholder="Enter YourPassword" style="width: fit-content;">
+                  <br><br>
+                  <label for="male">Male:</label>
+                  <input type="radio" name="gender" value="male" id="male">
+                  <label for="female">Female:</label>
+                  <input type="radio" name="gender" value="female" id="female">
+                  <br><br>
+                  <P>DOB</P>
+                  <input type="date"name=""id="">
+                  <p>UpLoad Your Photo</p>
+                  <input type="file" name="Chose file" id="">
+                  <br>
+                  <input type="Submit" value="Submit">
+               </form>
+           </fieldset>
+        </center>
+    </main>
+
+    </body>
+</html>-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f6f8fa;
+        }
+
+        /* ---------- HEADER ---------- */
+        header {
+            background: #ffffff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+        }
+
+        nav img {
+            height: 50px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+            gap: 25px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        nav ul li a:hover {
+            color: #007bff;
+        }
+
+        /* ---------- FORM CONTAINER ---------- */
+        .form-container {
+            max-width: 450px;
+            background: #ffffff;
+            margin: 40px auto;
+            padding: 30px 40px;
+            border-radius: 12px;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+        }
+
+        .form-container h2 {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #333;
+        }
+
+        label {
+            font-weight: 600;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"],
+        input[type="file"] {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+
+        .gender-group {
+            margin-bottom: 15px;
+        }
+
+        .gender-group label {
+            font-weight: normal;
+            margin-right: 15px;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            background: #007bff;
+            color: white;
+            padding: 12px;
+            font-size: 18px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        input[type="submit"]:hover {
+            background: #0056d2;
+        }
+
+        /* ---------- RESPONSIVE ---------- */
+        @media (max-width: 600px) {
+            nav ul {
+                flex-wrap: wrap;
+                gap: 15px;
+            }
+            .form-container {
+                width: 90%;
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <nav>
+            <a href="index.html">
+                <img src="assets/icons/saylani-welfare-international-trust-seeklogo.png" alt="Website Logo">
+            </a>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="Gallery.html">Gallery</a></li>
+                <li><a href="Media.html">Media</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="Register.html" style="color:#007bff;">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- FORM -->
+    <div class="form-container">
+        <h2>Create Your Account</h2>
+
+        <form>
+
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="fullname" placeholder="Enter your full name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+            <div class="gender-group">
+                <label>Gender:</label>
+                <input type="radio" name="gender" value="male" id="male">
+                <label for="male">Male</label>
+
+                <input type="radio" name="gender" value="female" id="female">
+                <label for="female">Female</label>
+            </div>
+
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dob">
+
+            <label for="photo">Upload Photo</label>
+            <input type="file" id="photo" name="photo">
+
+            <input type="submit" value="Register">
+        </form>
+    </div>
+
+</body>
+</html>

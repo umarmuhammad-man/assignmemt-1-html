@@ -1,0 +1,418 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login </title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #f2f2f2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+    .login-box {
+        background: #fff;
+        width: 350px;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .login-box h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .login-box input {
+        width: 100%;
+        padding: 12px;
+        margin: 8px 0;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+
+    .login-box button {
+        width: 100%;
+        background: #007bff;
+        color: #fff;
+        padding: 12px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .login-box button:hover {
+        background: #0056b3;
+    }
+
+    .login-box p {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .login-box a {
+        color: #007bff;
+        text-decoration: none;
+    }
+
+    .login-box a:hover {
+        text-decoration: underline;
+    }
+</style>
+</head>
+
+<body>
+
+    <div class="login-box">
+        <h2>Login</h2>
+        <form>
+            <input type="text" placeholder="Enter Your Name">
+            <br>
+            <input type="email" placeholder="Email Address" required>
+            <input type="password" placeholder="Password" required>
+            <select required style="height: 20px; width: 200px;">
+                <option value="">Select City</option>
+                <option value="Faisalabad">Faisalabad</option>
+                <option value="Karachi">Karachi</option>
+                <option value="Islamabad">Islamabad</option>
+                <option value="Lahore">Lahore</option>
+                <option value="Rawalpindi">Rawalpindi</option>
+                <option value="Gujranwala">Gujranwala</option>
+                <option value="Multan">Multan</option>
+                <option value="Sialkot">Sialkot</option>
+                <option value="Bahawalpur">Bahawalpur</option>
+                <option value="Sargodha">Sargodha</option>
+                <option value="Sheikhupura">Sheikhupura</option>
+                <option value="Jhelum">Jhelum</option>
+                <option value="Gujrat">Gujrat</option>
+                <option value="Sahiwal">Sahiwal</option>
+                <option value="Kasur">Kasur</option>
+                <option value="Okara">Okara</option>
+                <option value="Rahim Yar Khan">Rahim Yar Khan</option>
+                <option value="Dera Ghazi khan">Dera Ghazi Khan</option>
+                <option value="Chiniot">Chiniot</option>
+                <option value="Mianwali">Mianwali</option>
+                <option value="Murree">Murree</option>
+                <option value="Attock">Attock</option>
+            </select>
+            <br><br>
+            <p>
+              <b>Gender</b>
+            </p>
+            <hr>
+            <br>
+            <label for="male">Male:</label>
+            <input type="radio" name="gender" value="male" id="male">
+            <label for="female">Female:</label>
+            <input type="radio" name="gender" value="female" id="female">
+            <br>
+            <br>
+            <input type="submit" value="Login">-->
+            <!--<button type="submit">Login</button>-->
+            <!--<p>Don't have an account? <a href="Register.html">Register</a></p>
+            <p>Back to <a href="index.html">Home</a></p>
+        </form>
+   </div>  
+
+</body>
+
+</html>-->
+<!--
+
+🇵🇰 Sindh
+
+Karachi
+Hyderabad
+Sukkur
+Larkana
+Mirpur Khas
+Nawabshah (Shaheed Benazirabad)
+Jacobabad
+Shikarpur
+Dadu
+Badin
+Thatta
+Khairpur
+
+🇵🇰 Khyber Pakhtunkhwa (KPK)
+
+Peshawar
+Mardan
+Swat (Mingora)
+Abbottabad
+Kohat
+Dera Ismail Khan
+Haripur
+Nowshera
+Charsadda
+Mansehra
+Bannu
+Swabi
+
+🇵🇰 Balochistan
+
+Quetta
+Gwadar
+Turbat
+Khuzdar
+Sibi
+Zhob
+Chaman
+Hub
+Panjgur
+Loralai
+
+🇵🇰 Islamabad Capital Territory
+
+Islamabad
+Rawat
+Bhara Kahu
+
+🇵🇰 Gilgit-Baltistan
+
+Gilgit
+Skardu
+Hunza
+Chilas
+Gahkuch
+Astore
+
+🇵🇰 Azad Jammu & Kashmir (AJK)
+
+Muzaffarabad
+Mirpur
+Kotli
+Rawalakot
+Bagh
+Bhimber
+Neelum
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .login-box {
+            background: #fff;
+            width: 350px;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .login-box h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .login-box input,
+        .login-box select {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .login-box input[type="radio"] {
+            width: auto;
+        }
+
+        .login-box button,
+        .login-box input[type="submit"] {
+            width: 100%;
+            background: #007bff;
+            color: #fff;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .login-box button:hover,
+        .login-box input[type="submit"]:hover {
+            background: #0056b3;
+        }
+
+        .login-box p {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .login-box a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .login-box a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="login-box">
+        <h2>Login</h2>
+
+        <form>
+
+            <label>Name</label>
+            <input type="text" placeholder="Enter Your Name" required>
+
+            <label>Email</label>
+            <input type="email" placeholder="Email Address" required>
+
+            <label>Password</label>
+            <input type="password" placeholder="Password" required>
+
+            <label>Select City</label>
+            <select required>
+                <option value="">Select City</option>
+
+                <!-- Punjab -->
+                <optgroup label="Punjab">
+                    <option>Faisalabad</option>
+                    <option>Lahore</option>
+                    <option>Rawalpindi</option>
+                    <option>Gujranwala</option>
+                    <option>Sialkot</option>
+                    <option>Multan</option>
+                    <option>Bahawalpur</option>
+                    <option>Sargodha</option>
+                    <option>Sheikhupura</option>
+                    <option>Gujrat</option>
+                    <option>Sahiwal</option>
+                    <option>Kasur</option>
+                    <option>Okara</option>
+                    <option>Chiniot</option>
+                    <option>Jhelum</option>
+                    <option>Rahim Yar Khan</option>
+                    <option>Dera Ghazi Khan</option>
+                    <option>Mianwali</option>
+                    <option>Murre</option>
+                    <option>Attock</option>
+                </optgroup>
+
+                <!-- Sindh -->
+                <optgroup label="Sindh">
+                    <option>Karachi</option>
+                    <option>Hyderabad</option>
+                    <option>Sukkur</option>
+                    <option>Larkana</option>
+                    <option>Mirpur Khas</option>
+                    <option>Nawabshah</option>
+                    <option>Jacobabad</option>
+                    <option>Shikarpur</option>
+                    <option>Dadu</option>
+                    <option>Badin</option>
+                    <option>Thatta</option>
+                    <option>Khairpur</option>
+                </optgroup>
+
+                <!-- KPK -->
+                <optgroup label="Khyber Pakhtunkhwa (KPK)">
+                    <option>Peshawar</option>
+                    <option>Mardan</option>
+                    <option>Swat (Mingora)</option>
+                    <option>Abbottabad</option>
+                    <option>Kohat</option>
+                    <option>Dera Ismail Khan</option>
+                    <option>Haripur</option>
+                    <option>Nowshera</option>
+                    <option>Charsadda</option>
+                    <option>Mansehra</option>
+                    <option>Bannu</option>
+                    <option>Swabi</option>
+                </optgroup>
+
+                <!-- Balochistan -->
+                <optgroup label="Balochistan">
+                    <option>Quetta</option>
+                    <option>Gwadar</option>
+                    <option>Turbat</option>
+                    <option>Khuzdar</option>
+                    <option>Sibi</option>
+                    <option>Zhob</option>
+                    <option>Chaman</option>
+                    <option>Hub</option>
+                    <option>Panjgur</option>
+                    <option>Loralai</option>
+                </optgroup>
+
+                <!-- Islamabad -->
+                <optgroup label="Islamabad Capital Territory">
+                    <option>Islamabad</option>
+                    <option>Rawat</option>
+                    <option>Bhara Kahu</option>
+                </optgroup>
+
+                <!-- Gilgit -->
+                <optgroup label="Gilgit-Baltistan">
+                    <option>Gilgit</option>
+                    <option>Skardu</option>
+                    <option>Hunza</option>
+                    <option>Chilas</option>
+                    <option>Gahkuch</option>
+                    <option>Astore</option>
+                </optgroup>
+
+                <!-- AJK -->
+                <optgroup label="Azad Jammu & Kashmir (AJK)">
+                    <option>Muzaffarabad</option>
+                    <option>Mirpur</option>
+                    <option>Kotli</option>
+                    <option>Rawalakot</option>
+                    <option>Bagh</option>
+                    <option>Bhimber</option>
+                    <option>Neelum</option>
+                </optgroup>
+
+            </select>
+
+            <br><br>
+
+            <label><b>Gender</b></label>
+            <hr>
+
+            <label><input type="radio" name="gender" value="male" required> Male</label>
+            <label><input type="radio" name="gender" value="female"> Female</label>
+
+            <br><br>
+
+            <input type="submit" value="Login">
+
+            <p>Don't have an account? <a href="Register.html">Register</a></p>
+            <p>Back to <a href="index.html">Home</a></p>
+
+        </form>
+    </div>
+
+</body>
+
+</html>
