@@ -1,0 +1,223 @@
+/* ------------------------------
+   GLOBAL
+-------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, Arial, sans-serif;
+}
+
+body {
+    background: #f5f5f5;
+    color: #222;
+    line-height: 1.6;
+}
+
+img { max-width: 100%; }
+
+/* ------------------------------
+   HEADER
+-------------------------------*/
+.site-header {
+    background: #fff;
+    padding: 15px 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.wrap {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.brand {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #ff3b30;
+    text-decoration: none;
+}
+
+/* NAVIGATION */
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.main-nav a {
+    color: #333;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.main-nav a:hover { color: #ff3b30; }
+
+/* ------------------------------
+   HERO SECTION
+-------------------------------*/
+.hero {
+    position: relative;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    padding: 80px 20px;
+    overflow: hidden;
+}
+
+.hero-bg {
+    position: absolute;
+    inset: 0;
+    background-image: url("../Images/Apple.jpg"); /* Correct image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    /* Blur + opacity like Apple website */
+    opacity: 0.50;
+    filter: blur(1.5px);
+    z-index: -1;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #444;
+    margin-bottom: 20px;
+}
+.hero img
+{
+    padding-top: 20px;
+    padding-left: 500px;
+}
+
+.btn {
+    background: #ff3b30;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+/* ------------------------------
+   STATS SECTION
+-------------------------------*/
+.stats {
+    padding: 50px 20px;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+
+.stat {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.stat h3 {
+    color: #ff3b30;
+    font-size: 2.5rem;
+}
+
+/* ------------------------------
+   MISSION
+-------------------------------*/
+.mission {
+    padding: 60px 20px;
+    text-align: center;
+    background: #fff;
+    
+}
+.mission .btn {
+    background: #ff3b30;
+    padding: 14px 35px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+}
+#visit {
+    margin-top: 20px;
+    display: inline-block;
+}
+
+
+/* FOOTER FIX */
+.site-footer {
+    background: #111;
+    color: #eee;
+    padding: 40px 20px;
+}
+
+.footer-inner {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap; /* makes mobile clean */
+}
+
+.footer-figure img {
+    width: 350px;   /* adjust image size */
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* text section stays separate */
+.footer-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.footer-images {
+    display: flex;
+    gap: 10px;
+    margin: 15px 0;
+    width: 100%;
+}
+
+.img-box {
+    width: 100%;
+    height: 80px;
+    background: #333;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* MOBILE FIX */
+@media (max-width: 768px) {
+    .footer-inner {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-figure img {
+        width: 100%;
+    }
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .stats-grid { grid-template-columns: 1fr; }
+    .hero h1 { font-size: 2rem; }
+}
